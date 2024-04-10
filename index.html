@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator app</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="range">
+        <div class="rangemarks">3</div>
+        <div class="rangemarks">2</div>
+        <div class="rangemarks">1</div>
+      </div>
+      <div id="intro">
+        <span id="calc"> calc </span>
+        <span id="sliderlabel">
+          THEME
+          <input type="range" name="" id="slider" min="1" max="3" value="1" />
+        </span>
+      </div>
+      <div id="display">0</div>
+      <div id="functions">
+        <button id="7" onclick="add('7')">7</button>
+        <button id="8" onclick="add('8')">8</button>
+        <button id="9" onclick="add('9')">9</button>
+        <button id="del" onclick="del()">DEL</button>
+        <button id="4" onclick="add('4')">4</button>
+        <button id="5" onclick="add('5')">5</button>
+        <button id="6" onclick="add('6')">6</button>
+        <button id="addition" onclick="add('+')">+</button>
+        <button id="1" onclick="add('1')">1</button>
+        <button id="2" onclick="add('2')">2</button>
+        <button id="3" onclick="add('3')">3</button>
+        <button id="substract" onclick="add('-')">-</button>
+        <button id="point" onclick="add('.')">.</button>
+        <button id="0" onclick="add('0')">0</button>
+        <button id="divide" onclick="add('/')">/</button>
+        <button id="multiply" onclick="add('*')">x</button>
+        <button id="clearall" onclick="clearall( )">RESET</button>
+        <button id="equal" onclick="calc()">=</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/Healer28?tab=packages">Ayush K.</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

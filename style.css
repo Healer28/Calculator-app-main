@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "League Spartan", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  background-color: hsl(222, 26%, 31%);
+  color: hsl(0, 0%, 100%);
+}
+#main {
+  margin: 4rem 0px 0px 0;
+  width: 25rem;
+}
+#intro {
+  display: flex;
+  justify-content: space-between;
+}
+#slider {
+  height: 1.25rem;
+  width: 3.4375rem;
+  margin-left: 1.125rem;
+  -webkit-appearance: none;
+  border-radius: 312.5rem;
+  background-color: hsl(223, 31%, 20%);
+  padding: 0.09375rem 0.25rem;
+}
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+
+  background-color: hsl(6, 63%, 50%);
+}
+#range {
+  position: relative;
+  left: 21.21875rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 3.75rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.3125rem;
+}
+#sliderlabel {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+}
+#calc {
+  font-size: 1.75rem;
+}
+#display {
+  padding: 0.625rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0.9375rem 0;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 0.625rem;
+}
+#functions {
+  display: flex;
+  padding: 0.9375rem 0.9375rem;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 0.625rem;
+  height: fit-content;
+  background-color: hsl(223, 31%, 20%);
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.375rem 0 0 0;
+  margin: 0.625rem 0;
+  background: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  height: 2.8125rem;
+  width: 5rem;
+  border: none;
+  border-radius: 0.625rem;
+  font-family: "League Spartan", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: 0px 0.1875rem 0px 0px hsl(28, 16%, 65%);
+}
+#equal {
+  background: hsl(6, 63%, 50%);
+  box-shadow: 0px 0.1875rem 0px 0px hsl(6, 70%, 34%);
+  width: 45%;
+  font-size: 1.25rem;
+  color: white;
+}
+#clearall {
+  background-color: hsl(225, 21%, 49%);
+  width: 45%;
+  box-shadow: 0px 0.1875rem 0px 0px hsl(224, 28%, 35%);
+  font-size: 1.25rem;
+  color: white;
+}
+#del {
+  box-shadow: 0px 0.1875rem 0px 0px hsl(224, 28%, 35%);
+  background-color: hsl(225, 21%, 49%);
+  font-size: 1.25rem;
+  color: white;
+}
+.attribution {
+  margin: 0 0 1.25rem 0;
+}
+body .attribution a {
+  text-decoration: none;
+  color: #000000;
+}
+#slider::-webkit-slider-thumb:hover {
+  cursor: pointer;
+  background-color: hsl(6, 100%, 69%);
+}
+button:hover {
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+#equal:hover {
+  background-color: hsl(6, 100%, 69%);
+  cursor: pointer;
+}
+#clearall:hover {
+  background-color: hsl(224, 33%, 65%);
+  cursor: pointer;
+}
+#del:hover {
+  background-color: hsl(224, 33%, 65%);
+  cursor: pointer;
+}
+
+.theme2 #functions {
+  background-color: hsl(0, 5%, 81%);
+}
+.theme2 #display {
+  background-color: hsl(0, 0%, 93%);
+}
+.theme2 button {
+  color: hsl(60, 10%, 19%);
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
+}
+.theme2 #equal {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0px 3px 0px 0px hsl(25, 99%, 27%);
+}
+.theme2 #del,
+.theme2 #clearall {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0px 3px 0px 0px hsl(185, 58%, 25%);
+}
+.theme2 #slider {
+  background-color: hsl(0, 5%, 81%);
+}
+.theme2 #slider::-webkit-slider-thumb:hover {
+  cursor: pointer;
+  background-color: hsl(6, 100%, 69%);
+}
+.theme2 button:hover {
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.theme2 #equal:hover {
+  background-color: hsl(6, 100%, 69%);
+  cursor: pointer;
+}
+.theme2 #clearall:hover,
+.theme2 #del:hover {
+  background-color: hsl(185, 30%, 55%);
+  cursor: pointer;
+}
+
+.theme3 #functions {
+  background-color: hsl(268, 71%, 12%);
+}
+.theme3 #display {
+  background-color: hsl(268, 71%, 12%);
+}
+.theme3 button {
+  color: hsl(52, 100%, 62%);
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0px 3px 0px 0px hsl(290, 70%, 36%);
+}
+.theme3 #equal {
+  color: hsl(198, 20%, 13%);
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: 0px 3px 0px 0px hsl(177, 92%, 70%);
+}
+.theme3 #del,
+.theme3 #clearall {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0px 3px 0px 0px hsl(285, 91%, 52%);
+}
+.theme3 #slider {
+  background-color: hsl(268, 71%, 12%);
+}
+.theme3 #slider::-webkit-slider-thumb {
+  background-color: hsl(176, 100%, 44%);
+}
+.theme3 .attribution a {
+  color: white;
+}
+.theme3 #slider::-webkit-slider-thumb:hover {
+  cursor: pointer;
+  background-color: hsl(176, 94%, 66%);
+}
+.theme3 button:hover {
+  background-color: hsl(268, 41%, 50%);
+  cursor: pointer;
+}
+.theme3 #equal:hover {
+  background-color: hsl(176, 94%, 66%);
+  cursor: pointer;
+}
+.theme3 #clearall:hover,
+.theme3 #del:hover {
+  background-color: hsl(281, 95%, 37%);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+  #main {
+    margin: 1.5rem 0px 0px 0;
+    width: 20rem;
+  }
+  #range {
+    position: relative;
+    left: 16.21875rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 3.75rem;
+    font-size: 0.75rem;
+    margin-bottom: 0.3125rem;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.375rem 0 0 0;
+    margin: 0.625rem 0.2rem;
+    background: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    height: 3.5rem;
+    width: 3.5rem;
+    border: none;
+    border-radius: 0.4rem;
+    font-family: "League Spartan", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    box-shadow: 0px 0.1875rem 0px 0px hsl(28, 16%, 65%);
+  }
+  #display {
+    padding: 0.625rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 2rem;
+    margin: 0.9375rem 0;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 0.625rem;
+  }
+  #sliderlabel {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    font-size: 12px;
+  }
+}
